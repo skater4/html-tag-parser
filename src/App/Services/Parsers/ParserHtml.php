@@ -8,7 +8,7 @@ class ParserHtml extends ParserBase
     public function parse(): array
     {
         $tags = array();
-        preg_match_all('/<([^\/\s>]+)/', $this->content, $matches);
+        preg_match_all('/<(?!\s)([^\/\s>]+)(?=\s|\/?>)/', $this->content, $matches);
 
         foreach ($matches[1] as $tag) {
             $tagName = preg_replace("/\s.*$/", "", $tag);

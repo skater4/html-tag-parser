@@ -1,0 +1,9 @@
+{
+    "require": {
+        "symfony/dotenv": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6.9",
+        "ext-dom": "*"
+    }
+}

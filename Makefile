@@ -13,7 +13,3 @@ build:
 composer-install:
 	docker-compose config -q && \
 	docker-compose exec php composer install
-
-composer-update:
-	docker-compose config -q && \
-	docker-compose exec php composer update

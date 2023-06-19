@@ -8,11 +8,4 @@ class DotenvAdapter
     {
         return $_ENV[$name] ?? false;
     }
-
-    public static function populatePutenv(array $values): void
-    {
-        foreach ($values as $name => $value) {
-            putenv("$name=$value");
-        }
-    }
 }
